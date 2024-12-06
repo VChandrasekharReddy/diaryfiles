@@ -46,20 +46,39 @@
 
         <div class="right">
             <form class="diaryfrom" action="" method="post">
-                <textarea id="diary-entry" placeholder="Write your diary entry here..." required ></textarea>
+                <div class="mb">
+                    <p class="messagetext">kjahsjdfhajsdfhakjsfkaslfjsalf</p>
                 <input class="submitdiarybtn" type="submit" value="save">
+                </div>
+                <textarea id="diary-entry" placeholder="Write your diary entry here..." required ></textarea>
+                
             </form>
             <div class="diarydiv">
+                <div class="mb">
+                    <p class="messagetext">kjahsjdfhajsdfhakjsfkaslfjsalf</p>
+                    <button class="contentbtn" onclick="">tuday</button>
+                </div>
                 <div class="diarycontentdiv" id="diarycontentdiv">
-                    <p class="dc" id="dc"></p>
+                    <p class="dc" id="dc">asdfaskdjfkadf</p>
                     
                 </div>
-                <button class="contentbtn" onclick="">tuday</button>
+                
             </div>
         </div>
     </div>
+
     <script>
-        window.alert('aslkdfhakjsf');
+
+        if (localStorage.getItem("authToken")) {
+            window.location.href = "home.html";
+          }
+          
+
+
+        setTimeout(() => {
+            document.getElementById('messageid').innerText = '';
+            
+        }, 2000);
     </script>
 
 </body>

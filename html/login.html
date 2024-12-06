@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link rel="stylesheet" href="/css/login.css">
+    <script src="./../js//"></script>
 </head>
 <body>
     <div class="back"></div>
@@ -456,15 +457,16 @@
         <form action="LoginAction" method="POST">
             <div class="input-group">
                 <label for="username">Userid</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="username" name="username" required onchange="isvalieduserid(value)">
             </div>
             <div class="input-group">
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <button type="submit">Login</button>
+            <a href="/html/home.html">login</a>
             <p>Don't have an account? <a href="public/html/registration.html">Sign up</a></p>           
         </form>
     </div>
+    <script src="/js/login.js"></script>
 </body>
 </html>
